@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>The Amazing Blue Ball</title>
-    <link rel="shortcut icon" href="favicon2.png">
+    <link rel="shortcut icon" href="favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
     body {
@@ -18,6 +18,9 @@
         $('body').css('background-image','url("blueball.gif")');
         $('body').css('background-size','auto');
         $('body').html("<audio loop autoplay><source src='soundtrack (breakfast machine).mp3'></source></audio>")
+      };
+      if (e.key === "Escape"){
+        window.location.replace("../");
       };
     });
     </script>

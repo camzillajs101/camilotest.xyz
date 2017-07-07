@@ -4,6 +4,7 @@
     "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta http-equiv="Content-type" content="application/xhtml+xml;charset=utf-8"/>
     <title>Camilo's Test Website</title>
     <style>
@@ -98,4 +99,11 @@
       </li>
     </ol>
   </body>
+  <script>
+  $(document).on('keydown',function(e){
+    if (e.key === "Escape"){
+      window.location.replace("../");
+    };
+  });
+  </script>
 </html>
