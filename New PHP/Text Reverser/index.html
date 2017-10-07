@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Text Reverser</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<style>
+    *:focus {
+      outline: none;
+    }
+		</style>
+	</head>
+	<body>
+    <textarea id="input" placeholder="Type some stuff" rows="10" cols="20"></textarea><br>
+    <button id="submit">Reverse</button>
+		<script>
+    $('#submit').click(function(){
+      let newAry = $('#input').val().split("");
+      let newNewAry = newAry.reverse();
+      $('#input').val(newNewAry.join(""));
+    });
+		$(document).on('keydown',function(e){
+			if (e.key === "Escape"){
+				window.location.replace("../");
+			};
+		});
+		</script>
+	</body>
+</html>
