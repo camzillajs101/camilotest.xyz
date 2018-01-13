@@ -56,6 +56,13 @@
 
 		<div id="map"></div>
 		<script>
+		// Escape to hub
+		$(document).on('keydown',function(e){
+			if (e.key === "Escape"){
+				window.location.replace("../");
+			};
+		});
+		
 		// CloudApp initiation
 		CB.CloudApp.init('nhezpeuprhiw','0e1f84d2-970b-4e1e-bd66-729aee0a53a4');
 		// Mapbox initiation
