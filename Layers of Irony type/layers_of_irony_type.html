@@ -10,6 +10,19 @@
     <textarea id="input" placeholder="Type some stuff" rows="10" cols="20"></textarea><br>
     <button id="submit">Make this type Ironic</button>
     <script>
+    $('button').click(function(){
+      let capitalized = $('textarea').val().toUpperCase();
+      let newAry = capitalized.split("");
+      for (let i = 0; i < newAry.length; i++){
+        newAry[i] += " ";
+      };
+      $('textarea').val(newAry.join(""))
+  		$(document).on('keydown',function(e){
+  			if (e.key === "Escape"){
+  				window.location.replace("../");
+  			};
+  		});
+    });
     </script>
   </body>
 </html>
