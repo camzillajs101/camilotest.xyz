@@ -16,6 +16,7 @@
       for (let i = 0; i < newAry.length; i++){
         newAry[i] += " ";
       };
+      newAry[newAry.length - 1] = newAry[newAry.length - 1].substring(0,1);
       $('textarea').val(newAry.join(""))
   		$(document).on('keydown',function(e){
   			if (e.key === "Escape"){
