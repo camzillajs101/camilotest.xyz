@@ -17,8 +17,8 @@
         newAry[i] += " ";
       };
       newAry[newAry.length - 1] = newAry[newAry.length - 1].substring(0,1);
+      $('textarea').val(newAry.join(""));
     });
-    $('textarea').val(newAry.join(""))
     $(document).on('keydown',function(e){
       if (e.key === "Escape"){
         window.location.replace("../");
